@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <input type="text" name="" id=""  >
+    <!-- <button>click me</button> -->
+    <select name="" id="mylist">
+        <option value="">select option</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+    </select>
+    <!-- <p></p> -->
+
+    <script>
+        // document.querySelector("button").onclick = function(){
+        //     // document.querySelector("p").innerHTML = document.querySelector("input").value
+        //     let par = document.createElement("p");
+        //     var name = document.querySelector("input").value;
+        //     par.innerHTML = name 
+
+        //     document.body.appendChild(par)
+        // }
+
+
+        document.querySelector("select").onchange = function(){
+            var op = document.querySelector("#mylist");
+            var val = op.value 
+
+
+            
+
+            if(val === "5"){
+                for(let i =1 ; i<=val ;i++)
+                {   
+                   
+                    let d = document.createElement("div");
+                    var name = document.querySelector("input").value;
+                    d.innerHTML = name 
+                    document.body.appendChild(d)
+                }
+            }
+
+            else if(val === "10"){
+                for(let i =1 ; i<=val ;i++)
+                {   
+                   
+                    let d = document.createElement("div");
+                    var name = document.querySelector("input").value;
+                    d.innerHTML = name 
+                    document.body.appendChild(d)
+                }
+            }
+
+            else if(val === "15"){
+                for(let i =1 ; i<=val ;i++)
+                {   
+                   
+                    let d = document.createElement("div");
+                    var name = document.querySelector("input").value;
+                    d.innerHTML = name 
+                    document.body.appendChild(d)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
